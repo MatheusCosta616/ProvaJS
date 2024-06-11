@@ -97,3 +97,39 @@ function calcularMedia(notas) {
 // Exemplo de uso:
 calcularMedia([7, 6, 8, 5, 9, 7, 6]); //Ele deverá retornar "Sua média foi de  6.86 Você está  Aprovado"
 calcularMedia([4, 5, 6, 3, 4, 5, 6]); //Ele deverá retornar "Sua média foi de  4.71 Você está  Reprovado"
+
+//QUESTÃO 7
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    //Background da pagina
+    document.body.style.backgroundColor = "white";
+
+    // Cria uma div para exibir as informações
+    let informacoesDiv = document.createElement('div');
+    informacoesDiv.id = 'informacoes';
+
+    // Cria o conteúdo da div
+    informacoesDiv.innerHTML = `
+        Nome: João Silva <br>
+        Idade: 25 <br>
+        Curso: Engenharia <br>
+        Ano: 2024 <br>
+    `;
+
+    // Adiciona a div a página
+    document.body.appendChild(informacoesDiv);
+
+    // Estiliza o título
+    document.querySelector('h1').style.color = "#333";
+    document.querySelector('h1').style.fontFamily = "Arial, sans-serif";
+    document.querySelector('h1').style.textAlign = "center";
+
+    //Estiliza a div
+    informacoesDiv.style.fontFamily = "Arial, sans-serif";
+    informacoesDiv.style.margin = "20px";
+    informacoesDiv.style.padding = "10px";
+    informacoesDiv.style.border = "1px solid";
+    informacoesDiv.style.backgroundColor = "grey";
+});
+
+//QUEST
