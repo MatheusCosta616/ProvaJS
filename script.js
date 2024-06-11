@@ -60,7 +60,8 @@ function faixaEtaria(idade) {
 faixaEtaria(10) //Ele deverá retornar "criança"
 faixaEtaria(14) //Ele deverá retornar "Adolescente"
 faixaEtaria(34) //Ele deverá retornar "adulto"
-
+faixaEtaria(61) //Ele deverá retornar "idoso"
+ 
 //QUESTÃO 5
 
 function verificarLogin(usuario, senha) {
