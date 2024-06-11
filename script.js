@@ -61,5 +61,39 @@ faixaEtaria(10) //Ele deverá retornar "criança"
 faixaEtaria(14) //Ele deverá retornar "Adolescente"
 faixaEtaria(34) //Ele deverá retornar "adulto"
 
+//QUESTÃO 5
+
+function verificarLogin(usuario, senha) {
+    const usuarioCadastrado = "admin";
+    const senhaCadastrada = "1234";
+
+    if (usuario === usuarioCadastrado && senha === senhaCadastrada) {
+        return "Login realizado com sucesso";
+    } else {
+        return "Falha na autenticação";
+    }
+}
+
+// Exemplo de uso:
+console.log(verificarLogin("admin", "1234")); //Ele deverá retornar "Login realizado com sucesso"
+console.log(verificarLogin("Ronadinho", "12354")); //Ele deverá retornar "Falha na autenticação"
 
 
+//QUESTÃO 6
+function calcularMedia(notas) {
+    let soma = 0;
+    let nota = 0;
+
+    for (nota of notas) {
+        soma += nota;
+    }
+
+    let media = soma / notas.length;
+    let status = media >= 6 ? "Aprovado" : "Reprovado";
+
+    return console.log("Sua média foi de ", media.toFixed(2), "Você está ", status);
+}
+
+// Exemplo de uso:
+calcularMedia([7, 6, 8, 5, 9, 7, 6]); //Ele deverá retornar "Sua média foi de  6.86 Você está  Aprovado"
+calcularMedia([4, 5, 6, 3, 4, 5, 6]); //Ele deverá retornar "Sua média foi de  4.71 Você está  Reprovado"
