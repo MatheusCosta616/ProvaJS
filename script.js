@@ -89,7 +89,12 @@ function calcularMedia(notas) {
     }
 
     let media = soma / notas.length;
-    let status = media >= 6 ? "Aprovado" : "Reprovado";
+    let status
+    if (media >= 6){
+        status = "Aprovado"
+    }else{
+        status = "Reprovado"
+    }
 
     return console.log("Sua média foi de ", media.toFixed(2), "Você está ", status);
 }
