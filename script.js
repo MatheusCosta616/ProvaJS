@@ -152,4 +152,3 @@ let variavelFloat = parseFloat(variavelString);
 
 console.log(typeof variavelFloat);
 
-/////
