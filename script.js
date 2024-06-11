@@ -132,4 +132,4 @@ document.addEventListener('DOMContentLoaded', (event) => {
     informacoesDiv.style.backgroundColor = "grey";
 });
 
-//QUEST
+//QUESTÃO 4
