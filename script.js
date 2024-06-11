@@ -150,4 +150,6 @@ console.log(texto.includes("métodos")); //Ele deverá retornar "true"
 let variavelString = "123.45";
 let variavelFloat = parseFloat(variavelString);
 
-console.log(typeof variavelFloat)
+console.log(typeof variavelFloat);
+
+/////
