@@ -132,4 +132,22 @@ document.addEventListener('DOMContentLoaded', (event) => {
     informacoesDiv.style.backgroundColor = "grey";
 });
 
-//QUESTÃO 4
+//QUESTÃO 8
+
+let texto = "Tecnologia é um produto da ciência e da engenharia que envolve um conjunto de instrumentos, métodos e técnicas que visam a resolução de problemas.";
+
+console.log(texto.indexOf("em")); //Ele deverá retornar "141"
+
+console.log(texto.lastIndexOf("ia")); //Ele deverá retornar "48"
+
+console.log(texto.includes("ciência")); //Ele deverá retornar "true"
+
+console.log(texto.includes("métodos")); //Ele deverá retornar "true"
+
+
+//QUESTÃO 9
+
+let variavelString = "123.45";
+let variavelFloat = parseFloat(variavelString);
+
+console.log(typeof variavelFloat); 
